@@ -183,7 +183,7 @@ $(function() {
 		if (suffix != ".jpg" && suffix != ".gif" && suffix != ".png"
 				&& suffix != ".jpeg" && suffix != ".bmp") {
 			alert("对不起，系统仅支持标准格式的照片，请您调整格式后重新上传，谢谢 !");
-			return;
+			return false;
 		}
 
 		// 显示图片
@@ -240,7 +240,7 @@ $(function() {
 		var li = $("<li class='preview new-li'></li>");
 		container.append(li);
 		li.empty().append(img);
-		URL.revokeObjectURL(url);
+//		URL.revokeObjectURL(url);
 	}
 	
 
@@ -318,7 +318,7 @@ $(function() {
 	
 	function setUserInfo(data){
 		var container = $('.content-left>div');
-		var url = baseUrl+"/common/users_getUsersHeadImg.action?size=30&headimg=";
+		var url = baseUrl+"/common/users_getUsersHeadImg.action?size=160&headimg=";
 		
 		var img = $("<img src='"+url+data['headimg']+"'>");
 		

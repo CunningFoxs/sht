@@ -18,9 +18,11 @@ import com.sht.util.Static;
  * <p>
  * Description:本模块的action;
  * <p>
- * @author Kor_Zhang
+
  * @date 2017年9月13日 下午11:21:08
  * @version 1.0
+ * 
+ * 
  */
 @Controller
 @Scope("prototype")
@@ -90,7 +92,6 @@ public class GGoodsAction extends GBaseAction<GGoods,GoodsServiceI> {
 		String result = null;
 		try {
 			CustomUsers onlineUser = getOnlineUser();
-
 			
 			eject(onlineUser == null, "您已离线");
 				po.setOwner(onlineUser.getId());
@@ -144,8 +145,5 @@ public class GGoodsAction extends GBaseAction<GGoods,GoodsServiceI> {
 		writeJSON(path);
 	}
 	
-	
-	
-	
-	
+
 }

@@ -156,12 +156,14 @@ article{
 .content-left>ul{
     position: relative;
     display: inline-block;
+    width:510px;
+    height:100px;
     left: 50%;
     top:50%;
-    margin-left:-150px;
+    margin-left:-200px;
     margin-top:30px;
     margin-bottom: 30px;
-   /*  border:1px solid red; */
+  
 }
 .content-left>ul>li{
     position: relative;
@@ -170,10 +172,11 @@ article{
     border: 1px solid gold;
     padding: 5px;
     cursor: pointer;
+   
 }
 
 .content-left>ul>li:first-of-type{
-    border: 2px solid black;
+    border: 1px solid grey;
 }
 .content-left>ul>li>img{
     width: 50px;

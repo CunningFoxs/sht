@@ -16,7 +16,6 @@ import com.sht.common.service.CGoodsServiceI;
  * Description:公用GoodsAction
  * <p>
  * 
- * @author Kor_Zhang
  * @date 2017年9月26日 上午11:06:13
  * @version 1.0
  */
@@ -31,7 +30,6 @@ public class CGoodsAction extends BaseAction<CGoods, CGoodsServiceI> {
 	 * 测试:http://localhost/sht/common/goods_getGoodsImg.action?size=200&imgName=2.jpg;<br/>
 	 * 注意:保证目录下有指定size和imgName的文件,测试才能通过;<br/>
 	 * <p>
-	 * @author Kor_Zhang
 	 * @date 2017年9月26日 上午11:32:24
 	 * @version 1.0
 	 * @throws Exception

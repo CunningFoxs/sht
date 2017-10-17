@@ -15,7 +15,6 @@ import javax.mail.internet.MimeMessage;
 /**
  * 封装邮件发送 注意：mail.jar需要javaee6支持
  * 
- * @author Kor_Zhang
  *
  */
 public class Email {

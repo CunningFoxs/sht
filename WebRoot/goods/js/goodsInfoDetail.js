@@ -98,12 +98,12 @@ $(function() {
 				},function(){
 					mouseLeaved($(this));
 				});
-				rotationEvent = setTimeout(rotation, 2000);
+//				rotationEvent = setTimeout(rotation, 2000);
 			}
 			
 			$('#rotation-item').append(li);
 		}
-		
+		rotationEvent = setTimeout(rotation, 2000);
 	}
 	
 	var rotationIndex = 0;
@@ -114,7 +114,7 @@ $(function() {
 		clearTimeout(rotationEvent);
 		var index = target.index();
 		restoreBorder();
-		target.css('border-color', 'orangered');
+		target.css('border-color', 'orange');
 		
 		var targetParent = $('.content-left>img');
 		targetParent.attr('src', url_200+imgSrc[index]);
@@ -141,7 +141,7 @@ $(function() {
 		restoreBorder();
 
 		$('.content-left>ul>li:eq(' + rotationIndex + ')').css('border-color',
-				'orangered');
+				'orange');
 		$('.content-left>img').attr('src',url_200 + imgSrc[rotationIndex]);
 
 		rotationEvent = setTimeout(rotation, 2000);
@@ -149,7 +149,7 @@ $(function() {
 	
 	function restoreBorder() {
 		$('#rotation-item li').css({
-			'border' : '2px solid black'
+			'border' : '1px solid grey'
 		});
 	}
 
@@ -651,7 +651,7 @@ $(function() {
 		
 		console.log("userid="+userid);
 		console.log("users="+users);
-		alert(users.trim() == userid.trim());
+
 		if(users == " " || users == null){
 			alert("请先登录!");
 			return false;

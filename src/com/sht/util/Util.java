@@ -39,7 +39,6 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
  * Description:全局工具类;
  * <p>
  * 
- * @author Kor_Zhang
  * @date 2017年8月31日 下午3:14:15
  * @version 1.0
  * @see ClasssPathProps
@@ -65,7 +64,6 @@ public class Util extends ClasssPathProps {
 	 * <p>
 	 * Description:返回当前时间的Timestamp
 	 * <p>
-	 * @author Kor_Zhang
 	 * @date 2017年9月21日 下午10:46:06
 	 * @version 1.0
 	 * @return
@@ -81,7 +79,7 @@ public class Util extends ClasssPathProps {
 	 * <p>
 	 * Description:按比例缩放图片;
 	 * <p>
-	 * @author Kor_Zhang
+
 	 * @date 2017年9月20日 下午1:54:30
 	 * @version 1.0
 	 * @param source	待压缩图片;
@@ -102,7 +100,7 @@ public class Util extends ClasssPathProps {
 	 * <p>
 	 * Description:压缩图片;遵循原图宽高比例
 	 * <p>
-	 * @author Kor_Zhang
+
 	 * @date 2017年9月20日 下午2:00:17
 	 * @version 1.0
 	 * @param source	待压缩图片;
@@ -124,7 +122,6 @@ public class Util extends ClasssPathProps {
 	 * <p>
 	 * Description:利用log4j的info输出信息
 	 * <p>
-	 * @author Kor_Zhang
 	 * @date 2017年9月15日 上午10:14:17
 	 * @version 1.0
 	 * @param message
@@ -137,7 +134,7 @@ public class Util extends ClasssPathProps {
 	 * <p>
 	 * Description:利用log4j的debug输出信息
 	 * <p>
-	 * @author Kor_Zhang
+
 	 * @date 2017年9月15日 上午10:14:17
 	 * @version 1.0
 	 * @param message
@@ -152,7 +149,7 @@ public class Util extends ClasssPathProps {
 	 * Description:返回一个不重复的uuid字符串;
 	 * <p>
 	 * 
-	 * @author Kor_Zhang
+
 	 * @date 2017年9月13日 下午10:34:27
 	 * @version 1.0
 	 * @return
@@ -165,7 +162,6 @@ public class Util extends ClasssPathProps {
 	 * <p>
 	 * Description:
 	 * <p>
-	 * @author Kor_Zhang
 	 * @date 2017年9月20日 下午6:34:14
 	 * @version 1.0
 	 * @param expr
@@ -183,7 +179,6 @@ public class Util extends ClasssPathProps {
 	 * Description:
 	 * <p>
 	 * 
-	 * @author Kor_Zhang
 	 * @date 2017年9月2日 上午9:43:52
 	 * @version 1.0
 	 * @param expr
@@ -200,7 +195,6 @@ public class Util extends ClasssPathProps {
 	 * Description:
 	 * <p>
 	 * 
-	 * @author Kor_Zhang
 	 * @date 2017年9月11日 下午2:42:52
 	 * @version 1.0
 	 * @throws Exception
@@ -215,7 +209,6 @@ public class Util extends ClasssPathProps {
 	 * Description:抛出一个含错误信息的异常;
 	 * <p>
 	 * 
-	 * @author Kor_Zhang
 	 * @date 2017年9月11日 下午5:20:07
 	 * @version 1.0
 	 * @param msg
@@ -229,7 +222,6 @@ public class Util extends ClasssPathProps {
 	 * <p>
 	 * Description:将文件写入输出流
 	 * <p>
-	 * @author Kor_Zhang
 	 * @date 2017年9月20日 上午10:29:56
 	 * @version 1.0
 	 * @param os
@@ -245,7 +237,6 @@ public class Util extends ClasssPathProps {
 	 * <p>
 	 * Description:将文件写入输出流
 	 * <p>
-	 * @author Kor_Zhang
 	 * @date 2017年9月20日 上午10:29:56
 	 * @version 1.0
 	 * @param os
@@ -279,7 +270,6 @@ public class Util extends ClasssPathProps {
 	 * <p>
 	 * Description:获取multipartFile2File中的file
 	 * <p>
-	 * @author Kor_Zhang
 	 * @date 2017年9月20日 下午2:58:59
 	 * @version 1.0
 	 * @param file
@@ -301,7 +291,6 @@ public class Util extends ClasssPathProps {
 	 * 宽高比在压缩的过程中不变;<br/>
 	 * 如果源文件名为:a.png,压缩后根据版本会产生名为40_a.png,80_a.png,200_a.png的多个文件;
 	 * <p>
-	 * @author Kor_Zhang
 	 * @date 2017年9月20日 下午2:28:11
 	 * @version 1.0
 	 * @param sourceFile	待压缩文件;
@@ -510,7 +499,6 @@ public class Util extends ClasssPathProps {
 	 * Description:加载指定路径的属性文件,最后合并到指定的属性对象,不覆盖原来属性;
 	 * <p>
 	 * 
-	 * @author Kor_Zhang
 	 * @date 2017年9月14日 上午8:29:29
 	 * @version 1.0
 	 * @param to
@@ -542,7 +530,6 @@ public class Util extends ClasssPathProps {
 	 * Description:加载指定路径的属性文件,最后合并到指定的属性对象,不覆盖原来属性;
 	 * <p>
 	 * 
-	 * @author Kor_Zhang
 	 * @date 2017年9月14日 上午8:29:29
 	 * @version 1.0
 	 * @param to
@@ -573,7 +560,6 @@ public class Util extends ClasssPathProps {
 	 * Description:加载类路径下指定目录的properties文件到一个properties对象中; 获取根路径的文件传入"";
 	 * <p>
 	 * 
-	 * @author Kor_Zhang
 	 * @date 2017年9月14日 上午9:52:32
 	 * @version 1.0
 	 * @return
@@ -601,7 +587,6 @@ public class Util extends ClasssPathProps {
 	 * 例如:想要获取根目录的所有文件,只需要传入"";
 	 * <p>
 	 * 
-	 * @author Kor_Zhang
 	 * @date 2017年9月14日 上午8:44:03
 	 * @version 1.0
 	 * @param dirPath
@@ -629,7 +614,6 @@ public class Util extends ClasssPathProps {
 	 * 例如:想要获取根目录的所有文件,只需要传入"";
 	 * <p>
 	 * 
-	 * @author Kor_Zhang
 	 * @date 2017年9月14日 上午8:44:03
 	 * @version 1.0
 	 * @param dirPath
@@ -647,7 +631,6 @@ public class Util extends ClasssPathProps {
 	 * Description:获取指定目录的子文件;
 	 * <p>
 	 * 
-	 * @author Kor_Zhang
 	 * @date 2017年9月14日 上午8:45:09
 	 * @version 1.0
 	 * @param dirPath
@@ -665,7 +648,6 @@ public class Util extends ClasssPathProps {
 	 * Description:获取指定目录的子文件;
 	 * <p>
 	 * 
-	 * @author Kor_Zhang
 	 * @date 2017年9月14日 上午8:45:09
 	 * @version 1.0
 	 * @param dirPath
